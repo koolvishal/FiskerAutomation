@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-29T16:49:56Z" name="Suite" finished-at="2023-03-29T16:52:20Z" duration-ms="144205">
+    <groups>
+    </groups>
+    <test started-at="2023-03-29T16:49:56Z" name="Test" finished-at="2023-03-29T16:52:20Z" duration-ms="144205">
+      <class name="com.qa.DPS.Tests.LoginpageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.DPS.Tests.LoginpageTest@11f0a5a1]" started-at="2023-03-29T16:49:56Z" name="setup" finished-at="2023-03-29T16:51:48Z" duration-ms="111836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyClickAccountlnk()[pri:1, instance:com.qa.DPS.Tests.LoginpageTest@11f0a5a1]" started-at="2023-03-29T16:51:48Z" name="VerifyClickAccountlnk" finished-at="2023-03-29T16:51:59Z" duration-ms="10825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyClickAccountlnk -->
+        <test-method signature="VerifyLogin()[pri:1, instance:com.qa.DPS.Tests.LoginpageTest@11f0a5a1]" started-at="2023-03-29T16:51:59Z" name="VerifyLogin" finished-at="2023-03-29T16:52:19Z" duration-ms="20607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.DPS.Tests.LoginpageTest@11f0a5a1]" started-at="2023-03-29T16:52:19Z" name="tearDown" finished-at="2023-03-29T16:52:20Z" duration-ms="899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.DPS.Tests.LoginpageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
