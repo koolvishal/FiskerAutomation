@@ -25,7 +25,7 @@ public class LoginpageTest extends BaseTest{
 		homegpage = loginpage.Login("automation1@qa.com", "Test@1234");
 		String str = homegpage.getHeaderMSG();
 		Assert.assertEquals(str, "Fisker Ocean");
-		System.out.println("User is logged in");
+		
 	
 	}
 	
