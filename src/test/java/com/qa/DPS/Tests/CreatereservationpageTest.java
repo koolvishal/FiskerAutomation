@@ -8,7 +8,6 @@ import com.qa.DPS.Base.BaseTest;
 public class CreatereservationpageTest extends BaseTest {
 
 	
-	
 	@Test(priority=1)
 	public void VerifyCreateReservation()
 	{
