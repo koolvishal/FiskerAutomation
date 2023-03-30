@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="com.qa.DPS.Listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Login Test(failed)">
     <classes>
-      <class name="com.qa.DPS.Tests.CreatereservationpageTest">
+      <class name="com.qa.DPS.Tests.LoginpageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="VerifyCreateReservation"/>
+          <include name="VerifyLogin"/>
         </methods>
-      </class> <!-- com.qa.DPS.Tests.CreatereservationpageTest -->
+      </class> <!-- com.qa.DPS.Tests.LoginpageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Login Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
