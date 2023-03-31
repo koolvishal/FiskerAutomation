@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="2">
   <listeners>
     <listener class-name="com.qa.DPS.Listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="Login Test(failed)">
+  <test thread-count="2" name="Login Test(failed)" verbose="2">
     <classes>
       <class name="com.qa.DPS.Tests.LoginpageTest">
         <methods>

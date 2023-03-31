@@ -22,7 +22,7 @@ public class LoginpageTest extends BaseTest{
 	public void VerifyLogin()
 	{
 		loginpage.clickAccount();
-		homegpage = loginpage.Login("automation@qa.com", "Test@1234");
+		homegpage = loginpage.Login("automation2@qa.com", "Test@1234");
 		String str = homegpage.getHeaderMSG();
 		Assert.assertEquals(str, "Fisker Ocean");
 		

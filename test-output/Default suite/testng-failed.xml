@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="2">
-  <listeners>
-    <listener class-name="com.qa.DPS.Listeners.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="2" name="Login Test(failed)" verbose="2">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.qa.DPS.Tests.LoginpageTest">
         <methods>
@@ -14,5 +11,5 @@
         </methods>
       </class> <!-- com.qa.DPS.Tests.LoginpageTest -->
     </classes>
-  </test> <!-- Login Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
