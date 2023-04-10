@@ -10,6 +10,8 @@ public class Loginpage {
 		private String btnAcceptCookies = "//button[@id='onetrust-accept-btn-handler']";
 		private String btnMenu = "//button[@id='menuNavLink']";
 		private String lnkAccountUnderMenu = "//a[@data-testid='primary-link15']/span[1]";
+		private String lnkAddNewReservation = "//h2[contains(text(),'Add New')]";
+		private String lnkSecondReservationOpt = "(//h2[contains(text(),'Reservation')])[2]";
 		private String lnkAccount = "//a[@id='accountNavLink2']";
 		private String lblWelcome = "//h2[contains(text(),'Welcome back.')]";
 		private String txtemail = "//input[@id='email']";
@@ -29,6 +31,13 @@ public class Loginpage {
 			page.click(btnAcceptCookies);
 			
 		}
+		public void clickSecondResOption()
+		{
+			
+			page.click(lnkSecondReservationOpt);
+			
+		}
+		
 		public void clickMenu()
 		{
 			
@@ -40,6 +49,13 @@ public class Loginpage {
 		{
 			
 			page.click(lnkAccountUnderMenu);
+			
+		}
+		
+		public void clickAddNewUnderMenu()
+		{
+			
+			page.click(lnkAddNewReservation);
 			
 		}
 		

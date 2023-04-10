@@ -8,7 +8,8 @@ public class AddNewReservationpage {
 	
 	
 		//locators
-		private String lnkAddNewReservation = "//a[starts-with(@href,'/account/my-orders?addNew=')]";
+		//private String lnkAddNewReservation = "//a[starts-with(@href,'/account/my-orders?addNew=')]";
+		//private String lnkAddNewReservation = "//h2[contains(text(),'Add New')]";
 		private String btnReserveOnOcean = "//a[starts-with(@href,'/reserve/ocean')]/span[1]";
 		
 		
@@ -21,12 +22,13 @@ public class AddNewReservationpage {
 		
 		
 		//methods
-		public void clickAddNew()
-		{
-			
-			page.locator(lnkAddNewReservation).click();
-			
-		}
+		/*
+		 * public void clickAddNew() {
+		 * 
+		 * page.locator(lnkAddNewReservation).click();
+		 * 
+		 * }
+		 */
 		
 		public void clickReserveOnOceanTile()
 		{

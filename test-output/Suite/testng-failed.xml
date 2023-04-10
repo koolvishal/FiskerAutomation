@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="com.qa.DPS.Listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="2" name="OrderCreation Test(failed)" verbose="2">
+  <test thread-count="2" name="Reservation Test(failed)" verbose="2">
     <classes>
-      <class name="com.qa.DPS.Tests.CreateOrderPageTest">
+      <class name="com.qa.DPS.Tests.CreatereservationpageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="VerifySecondOceanReservation" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="VerifyCreateOrder"/>
         </methods>
-      </class> <!-- com.qa.DPS.Tests.CreateOrderPageTest -->
+      </class> <!-- com.qa.DPS.Tests.CreatereservationpageTest -->
     </classes>
-  </test> <!-- OrderCreation Test(failed) -->
+  </test> <!-- Reservation Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

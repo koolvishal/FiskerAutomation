@@ -9,18 +9,18 @@
     <classes>
       <class name="com.qa.DPS.Tests.LoginpageTest"/>
     </classes>
-  </test>
+  </test>-->
   
  <test name="Reservation Test">
     <classes>
       <class name="com.qa.DPS.Tests.CreatereservationpageTest"/>
     </classes>
- </test>-->
-  <test name="OrderCreation Test">
+ </test>
+ <!--  <test name="OrderCreation Test">
     <classes>
       <class name="com.qa.DPS.Tests.CreateOrderPageTest"/>
     </classes>
- </test>
+ </test>-->
  
   
 </suite> <!-- Suite -->

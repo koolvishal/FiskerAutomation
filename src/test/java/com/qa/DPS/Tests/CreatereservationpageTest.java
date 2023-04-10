@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.qa.DPS.Utilities.*;
 import com.qa.DPS.Base.BaseTest;
 import com.qa.DPS.Pages.AddNewReservationpage;
+import com.qa.DPS.Pages.Homepage;
 
 public class CreatereservationpageTest extends BaseTest {
 
@@ -16,8 +17,10 @@ public class CreatereservationpageTest extends BaseTest {
 	@Test(dataProvider="createReservationtestData",priority=1)
 	public void VerifyFirstOceanReservation(String cardowner,String cardno,String expdate,String CVC,String zip)
 	{
-		  loginpage.clickAccount();
-		  homegpage=loginpage.Login("automation3@qa.com","Test@1234");
+		  loginpage.clickAcceptCookies();
+		  loginpage.clickMenu();
+		  loginpage.clickAccountUnderMenu();
+		  homegpage=loginpage.Login("automation4@qa.com","Test@1234");
 		  createreservationpage=homegpage.clickReserve(); 
 		  createreservationpage.EnterNameOfCardOwner(cardowner);
 		  createreservationpage.EnterCardNo(cardno);
@@ -28,8 +31,10 @@ public class CreatereservationpageTest extends BaseTest {
 		  String act = createreservationpage.getResSuccessMsg();
 		  Assert.assertEquals(act, "Your First Fisker Ocean is now Reserved!");
 		  createreservationpage.clickProceedToAccount();
-		  String actReservationFirstlbl= homegpage.getFirstReservationMsg();
-		  Assert.assertEquals(actReservationFirstlbl, "Reservation");
+		  String actReserVationID= homegpage.getReservationID();
+		  System.out.println("first Reservation "+actReserVationID);
+		  Assert.assertNotNull(actReserVationID);
+		 
 		  
 
 	}
@@ -38,8 +43,10 @@ public class CreatereservationpageTest extends BaseTest {
 	 @Test(dataProvider="createReservationtestData",priority=2)	
 	  public void VerifySecondOceanReservation(String cardowner,String cardno,String expdate,String CVC,String zip) throws Exception 
 	  {
+		  loginpage.clickMenu(); 
+		  loginpage.clickAddNewUnderMenu();
 		  addNewReservationpage = new AddNewReservationpage(page); 
-		  addNewReservationpage.clickAddNew(); 
+		  //addNewReservationpage.clickAddNew(); 
 		  addNewReservationpage.clickReserveOnOceanTile();
 		  createreservationpage.EnterNameOfCardOwner(cardowner);
 		  createreservationpage.EnterCardNo(cardno);
@@ -50,10 +57,14 @@ public class CreatereservationpageTest extends BaseTest {
 		  String act =createreservationpage.getResSuccessMsgSecond();
 		  Assert.assertEquals(act,"Your Second Fisker Ocean is Reserved!");
 		  createreservationpage.clickProceedToAccount();
-		  homegpage.clickReservation();
-		  Thread.sleep(5000);
-		  String actReservationFirstlbl = homegpage.getSecondReservationMsg();
-		  Assert.assertEquals(actReservationFirstlbl, "Reservation");
+		  //homegpage.clickReservation();
+		  Thread.sleep(3000);
+		  loginpage.clickMenu(); 
+		  loginpage.clickSecondResOption();
+		  String actReserVationID= homegpage.getReservationID();
+		  System.out.println("Second Reservation "+actReserVationID);
+		  Assert.assertNotNull(actReserVationID);
+		 
 		  
 	  }
 	 

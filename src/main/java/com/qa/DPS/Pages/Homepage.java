@@ -15,6 +15,11 @@ public class Homepage {
 		private String lblReservationFirst = "(//a[starts-with(@href,'/account/my-orders')])[2]/h2[2]";
 		private String lblReservationSecond = "(//a[starts-with(@href,'/account/my-orders')])[3]/h2[2]";
 		private String btnGetStarted = "//a[starts-with(@href,'/account/order/ocean?reservationId')]";
+		private String reservationID = "//h6[@data-id='date']";
+		
+		
+		
+		
 		
 		
 	//constructor
@@ -27,6 +32,12 @@ public class Homepage {
 	{
 		page.click(btnReserve);
 		return new Createreservationpage(page);
+	}
+	
+	public String getReservationID()
+	{
+		String strMsg = page.textContent(reservationID);
+		return strMsg;
 	}
 	
 	public String getHelloMSG()
