@@ -10,10 +10,13 @@ public class Homepage {
 		private String btnReserve = "(//button[contains(@class,'MuiButtonBase-')])[2]/span[contains(text(),'Reserve')]";
 		private String lblHello = "//h6[contains(text(),'Hello!')]";
 		//1st Reservation locator
-		private String lblReservationFirst = "//li[contains(@class,'css-')]//h2[contains(text(),'Reservation')]";
+		//private String lblReservationFirst = "//li[contains(@class,'css-')]//h2[contains(text(),'Reservation')]";
 		private String headerFiskerOcean = "//h1[contains(text(),'Fisker Ocean')]";
-	
-	
+		private String lblReservationFirst = "(//a[starts-with(@href,'/account/my-orders')])[2]/h2[2]";
+		private String lblReservationSecond = "(//a[starts-with(@href,'/account/my-orders')])[3]/h2[2]";
+		private String btnGetStarted = "//a[starts-with(@href,'/account/order/ocean?reservationId')]";
+		
+		
 	//constructor
 	public Homepage(Page page)
 		{
@@ -43,6 +46,26 @@ public class Homepage {
 		String strMsg = page.textContent(lblReservationFirst);
 		return strMsg;
 	}
+	
+	public String getSecondReservationMsg()
+	{
+		String strMsg = page.textContent(lblReservationSecond);
+		return strMsg;
+	}
+	
+	public void clickReservation()
+	{
+		page.locator(lblReservationSecond).click();
+		
+	}
+	
+	public SelectCountryPage clickGetStarted()
+	{
+		page.locator(btnGetStarted).click();
+		return new SelectCountryPage(page);
+		
+	}
+	
 	
 	
 	

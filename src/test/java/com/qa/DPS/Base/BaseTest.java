@@ -7,9 +7,13 @@ import org.testng.annotations.BeforeTest;
 
 import com.microsoft.playwright.Page;
 import com.qa.DPS.Factory.PlaywrightFactory;
+import com.qa.DPS.Pages.AddNewReservationpage;
+import com.qa.DPS.Pages.CreateOrderPage;
 import com.qa.DPS.Pages.Createreservationpage;
 import com.qa.DPS.Pages.Homepage;
 import com.qa.DPS.Pages.Loginpage;
+import com.qa.DPS.Pages.SelectCountryPage;
+import com.qa.DPS.Pages.SelectTrimPage;
 
 
 public class BaseTest {
@@ -19,6 +23,10 @@ public class BaseTest {
 	protected Loginpage loginpage; 
 	protected Homepage homegpage; 
 	protected Createreservationpage createreservationpage; 
+	protected AddNewReservationpage addNewReservationpage;
+	protected SelectCountryPage selectcountrypage;
+	protected SelectTrimPage selecttrimpage;
+	protected CreateOrderPage createOrderPage;
 	Properties prop;
 	
 	@BeforeTest
@@ -37,7 +45,9 @@ public class BaseTest {
 	@AfterTest
 	public void tearDown()
 	{
+	
 		page.context().browser().close();
+		
 	}
 	
 }

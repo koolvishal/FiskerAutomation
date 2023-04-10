@@ -7,6 +7,9 @@ public class Loginpage {
 	Page page;
 		//locators
 		//private String lnkCreateAccount = "//a[@href='/create-account']";
+		private String btnAcceptCookies = "//button[@id='onetrust-accept-btn-handler']";
+		private String btnMenu = "//button[@id='menuNavLink']";
+		private String lnkAccountUnderMenu = "//a[@data-testid='primary-link15']/span[1]";
 		private String lnkAccount = "//a[@id='accountNavLink2']";
 		private String lblWelcome = "//h2[contains(text(),'Welcome back.')]";
 		private String txtemail = "//input[@id='email']";
@@ -20,11 +23,29 @@ public class Loginpage {
 		}
 	
 		//methods
-		public void clickAccount()
+		public void clickAcceptCookies()
 		{
 			
-			page.click(lnkAccount);
+			page.click(btnAcceptCookies);
 			
+		}
+		public void clickMenu()
+		{
+			
+			page.click(btnMenu);
+			
+		}
+		
+		public void clickAccountUnderMenu()
+		{
+			
+			page.click(lnkAccountUnderMenu);
+			
+		}
+		
+		public void clickAccount()
+		{
+			page.click(lnkAccount);
 		}
 		
 		public String getWelcomeMsg()

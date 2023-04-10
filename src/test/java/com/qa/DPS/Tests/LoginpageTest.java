@@ -1,9 +1,11 @@
 package com.qa.DPS.Tests;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.DPS.Base.BaseTest;
+import com.qa.DPS.Pages.Loginpage;
 
 public class LoginpageTest extends BaseTest{
 
@@ -11,7 +13,8 @@ public class LoginpageTest extends BaseTest{
 	  @Test(priority=1)
 	  public void VerifyClickAccountlnk() 
 	  {
-		  loginpage.clickAccount(); String strAct = loginpage.getWelcomeMsg();
+		  loginpage.clickAccount(); 
+		  String strAct = loginpage.getWelcomeMsg();
 		  Assert.assertEquals(strAct, "Welcome back.");
 	  
 	  }
@@ -26,7 +29,6 @@ public class LoginpageTest extends BaseTest{
 		String str = homegpage.getHeaderMSG();
 		Assert.assertEquals(str, "Fisker Ocean");
 		
-	
 	}
 	
 	

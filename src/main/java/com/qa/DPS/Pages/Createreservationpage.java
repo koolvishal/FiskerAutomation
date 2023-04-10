@@ -25,7 +25,7 @@ public class Createreservationpage {
 		private String iframeCVC = "(//iframe[contains(@name,'privateStripeFrame')])[3]";
 		private String lblResrevationSuccessMsg = "//h1[@id='reservation_successful1']";
 		private String btnProceedToAccount= "(//button[contains(@class,'MuiButtonBase-')])[2]/span[1]/span[1]";
-		
+		private String lblResrevationSuccessMsg2 = "//h1[@id='reservation_successful2']";
 		
 		//methods
 		public void EnterNameOfCardOwner(String strName)
@@ -65,10 +65,17 @@ public class Createreservationpage {
 			String strMsg = page.textContent(lblResrevationSuccessMsg);
 			return strMsg;
 		}
+		
+		public String getResSuccessMsgSecond()
+		{
+			String strMsg = page.textContent(lblResrevationSuccessMsg2);
+			return strMsg;
+		}
 			
 		public void clickProceedToAccount()
 		{
-			page.click(btnProceedToAccount);
+			page.locator(btnProceedToAccount).click();
+			
 		}
 		
 		public boolean createReserve(String strName,String strcardNo,String strExpDate,String strCVC,String strBillingZip)
@@ -84,6 +91,7 @@ public class Createreservationpage {
 			page.click(btnConfirm);
 			return true;
 		}
+		
 		
 		
 }

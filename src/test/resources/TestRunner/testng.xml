@@ -5,17 +5,22 @@
 	<listener class-name="com.qa.DPS.Listeners.ExtentReportListener"></listener>
 </listeners>
 
- <test name="Login Test">
+ <!--<test name="Login Test">
     <classes>
       <class name="com.qa.DPS.Tests.LoginpageTest"/>
     </classes>
-  </test> 
+  </test>
   
  <test name="Reservation Test">
     <classes>
       <class name="com.qa.DPS.Tests.CreatereservationpageTest"/>
     </classes>
-  </test>
-  
+ </test>-->
+  <test name="OrderCreation Test">
+    <classes>
+      <class name="com.qa.DPS.Tests.CreateOrderPageTest"/>
+    </classes>
+ </test>
+ 
   
 </suite> <!-- Suite -->

@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="com.qa.DPS.Listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="2" name="Login Test(failed)" verbose="2">
+  <test thread-count="2" name="OrderCreation Test(failed)" verbose="2">
     <classes>
-      <class name="com.qa.DPS.Tests.LoginpageTest">
+      <class name="com.qa.DPS.Tests.CreateOrderPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="VerifyLogin"/>
+          <include name="VerifyCreateOrder"/>
         </methods>
-      </class> <!-- com.qa.DPS.Tests.LoginpageTest -->
+      </class> <!-- com.qa.DPS.Tests.CreateOrderPageTest -->
     </classes>
-  </test> <!-- Login Test(failed) -->
+  </test> <!-- OrderCreation Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

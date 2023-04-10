@@ -1,72 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-31T14:12:27Z" name="Suite" finished-at="2023-03-31T14:13:45Z" duration-ms="77233">
+  <suite started-at="2023-04-10T07:48:51Z" name="Suite" finished-at="2023-04-10T07:51:19Z" duration-ms="147501">
     <groups>
     </groups>
-    <test started-at="2023-03-31T14:12:27Z" name="Login Test" finished-at="2023-03-31T14:13:09Z" duration-ms="41738">
-      <class name="com.qa.DPS.Tests.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.DPS.Tests.LoginpageTest@65b3a85a]" started-at="2023-03-31T14:12:27Z" name="setup" finished-at="2023-03-31T14:13:01Z" duration-ms="33296" status="PASS">
+    <test started-at="2023-04-10T07:48:51Z" name="OrderCreation Test" finished-at="2023-04-10T07:51:19Z" duration-ms="147501">
+      <class name="com.qa.DPS.Tests.CreateOrderPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.DPS.Tests.CreateOrderPageTest@10993713]" started-at="2023-04-10T07:48:51Z" name="setup" finished-at="2023-04-10T07:49:51Z" duration-ms="60050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyClickAccountlnk()[pri:1, instance:com.qa.DPS.Tests.LoginpageTest@65b3a85a]" started-at="2023-03-31T14:13:01Z" name="VerifyClickAccountlnk" finished-at="2023-03-31T14:13:03Z" duration-ms="2343" status="PASS">
+        <test-method signature="VerifyCreateOrder()[pri:1, instance:com.qa.DPS.Tests.CreateOrderPageTest@10993713]" started-at="2023-04-10T07:49:51Z" name="VerifyCreateOrder" finished-at="2023-04-10T07:51:17Z" duration-ms="86073" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyClickAccountlnk -->
-        <test-method signature="VerifyLogin()[pri:1, instance:com.qa.DPS.Tests.LoginpageTest@65b3a85a]" started-at="2023-03-31T14:13:04Z" name="VerifyLogin" finished-at="2023-03-31T14:13:08Z" duration-ms="4120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.DPS.Tests.LoginpageTest@65b3a85a]" started-at="2023-03-31T14:13:08Z" name="tearDown" finished-at="2023-03-31T14:13:09Z" duration-ms="850" status="PASS">
+        </test-method> <!-- VerifyCreateOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.DPS.Tests.CreateOrderPageTest@10993713]" started-at="2023-04-10T07:51:18Z" name="tearDown" finished-at="2023-04-10T07:51:19Z" duration-ms="967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.DPS.Tests.LoginpageTest -->
-    </test> <!-- Login Test -->
-    <test started-at="2023-03-31T14:13:09Z" name="Reservation Test" finished-at="2023-03-31T14:13:45Z" duration-ms="35100">
-      <class name="com.qa.DPS.Tests.CreatereservationpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.DPS.Tests.CreatereservationpageTest@18230356]" started-at="2023-03-31T14:13:09Z" name="setup" finished-at="2023-03-31T14:13:28Z" duration-ms="18469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyCreateReservation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.DPS.Tests.CreatereservationpageTest@18230356]" started-at="2023-03-31T14:13:30Z" name="VerifyCreateReservation" data-provider="createReservationtestData" finished-at="2023-03-31T14:13:43Z" duration-ms="13417" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[autousa]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4242424242424242]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[06/24]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[99999]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCreateReservation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.DPS.Tests.CreatereservationpageTest@18230356]" started-at="2023-03-31T14:13:44Z" name="tearDown" finished-at="2023-03-31T14:13:45Z" duration-ms="849" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.DPS.Tests.CreatereservationpageTest -->
-    </test> <!-- Reservation Test -->
+      </class> <!-- com.qa.DPS.Tests.CreateOrderPageTest -->
+    </test> <!-- OrderCreation Test -->
   </suite> <!-- Suite -->
 </testng-results>
